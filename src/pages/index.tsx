@@ -49,7 +49,7 @@ export default function Home() {
           </p>
         </blockquote>
       </div>
-      <div className="grid h-screen w-full grid-cols-1 gap-5 p-2 lg:grid-cols-2 lg:p-16">
+      <div className="grid h-screen w-full grid-cols-1 gap-5 p-2 sm:mt-10 lg:grid-cols-2 lg:p-16">
         <div className="h-full w-full ">
           <textarea
             readOnly={loading}
