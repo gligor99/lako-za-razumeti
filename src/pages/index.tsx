@@ -36,7 +36,7 @@ export default function Home() {
   }
 
   return (
-    <section className="flex h-screen w-screen flex-1 flex-col items-center justify-center p-10">
+    <section className="absolute inset-0 flex h-screen w-screen flex-1 flex-col items-center justify-center p-10">
       <div className="flex items-center justify-center">
         <blockquote className="my-4 hidden border-l-4 border-yellow-300 bg-gray-50 p-4 lg:block">
           <p className="hidden  text-center lg:block">
