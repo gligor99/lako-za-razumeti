@@ -20,8 +20,6 @@ export default function Home() {
 
     const prompt = `Sumirajte ovo, kako bi bilo lakse za razumeti: ${promptText}`
 
-    console.log(prompt)
-
     const completion = await openai.createCompletion({
       model: 'text-davinci-003',
       prompt: prompt,
