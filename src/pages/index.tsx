@@ -49,9 +49,9 @@ export default function Home() {
         <div className="h-full w-full">
           <textarea
             readOnly
-            value={summarizedText}
+            value={summarizedText.trim()}
             wrap="virtual"
-            placeholder="Generisani tekst ...."
+            placeholder="Generisani tekst ..."
             className="aligntop h-full w-full resize-none rounded-lg border-2 border-black p-4 focus:border-pink-100 active:border-pink-100"
           ></textarea>
         </div>
