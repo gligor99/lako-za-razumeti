@@ -37,15 +37,15 @@ export default function Home() {
   }
 
   return (
-    <section className="flex p-10 flex-1 flex-col w-screen h-screen items-center justify-center">
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:p-16 h-screen w-full gap-5 p-2">
+    <section className="flex h-screen w-screen flex-1 flex-col items-center justify-center p-10">
+      <div className="grid h-screen w-full grid-cols-1 gap-5 p-2 lg:grid-cols-2 lg:p-16">
         <div className="h-full w-full ">
           <textarea
             readOnly={loading}
             placeholder="Dodajte tekst ..."
             value={promptText}
             onChange={(e) => setPromptText(e.target.value)}
-            className="h-full resize-none w-full p-4 border-2 border-black rounded-lg focus:border-pink-100 active:border-pink-100"
+            className="h-full w-full resize-none rounded-lg border-2 border-black p-4 focus:border-pink-100 active:border-pink-100"
           ></textarea>
         </div>
         <div className="h-full w-full">
@@ -54,21 +54,21 @@ export default function Home() {
             value={summarizedText}
             wrap="virtual"
             placeholder="Generisani tekst ...."
-            className="h-full aligntop resize-none w-full p-4 border-2 border-black rounded-lg focus:border-pink-100 active:border-pink-100"
+            className="aligntop h-full w-full resize-none rounded-lg border-2 border-black p-4 focus:border-pink-100 active:border-pink-100"
           ></textarea>
         </div>
       </div>
 
       <button
-        className={`flex py-2 px-2 items-center justify-center uppercase font-semibold rounded-lg bg-yellow-300 text-black min-w-[250px] min-h-[50px] ${
-          loading ? 'opacity-50 cursor-not-allowed' : ''
+        className={`flex min-h-[50px] min-w-[250px] items-center  justify-center rounded-lg bg-yellow-300 py-2 px-2 font-semibold uppercase text-black ${
+          loading ? 'cursor-not-allowed opacity-50' : ''
         }`}
         onClick={getSummarizedText}
         disabled={loading}
       >
         {loading ? (
           <svg
-            className="animate-spin h-5 w-5  border-t-2 border-b-2 border-black rounded-full"
+            className="h-5 w-5 animate-spin  rounded-full border-t-2 border-b-2 border-black"
             viewBox="0 0 24 24"
           >
             <circle
