@@ -38,14 +38,16 @@ export default function Home() {
   return (
     <section className="flex h-screen w-screen flex-1 flex-col items-center justify-center p-10">
       <div className="flex items-center justify-center">
-        <p className="hidden  text-center lg:block">
-          Aplikacija vrši sumarizaciju teksta na njegove ključne tačke kako bi
-          olakšala razumevanje i uštedela vreme čitaocima. Sa samo jednim
-          klikom, aplikacija skraćuje tekst i izdvaja najbitnije informacije
-          kako bi se dobilo brzo i efikasno razumevanje sadržaja. Sa ovom
-          aplikacijom, možete biti sigurni da ćete brzo dobiti suštinske
-          informacije koje vam trebaju.
-        </p>
+        <blockquote className="my-4 hidden border-l-4 border-yellow-300 bg-gray-50 p-4 lg:block">
+          <p className="hidden  text-center lg:block">
+            Aplikacija vrši sumarizaciju teksta na njegove ključne tačke kako bi
+            olakšala razumevanje i uštedela vreme čitaocima. Sa samo jednim
+            klikom, aplikacija skraćuje tekst i izdvaja najbitnije informacije
+            kako bi se dobilo brzo i efikasno razumevanje sadržaja. Sa ovom
+            aplikacijom, možete biti sigurni da ćete brzo dobiti suštinske
+            informacije koje vam trebaju.
+          </p>
+        </blockquote>
       </div>
       <div className="grid h-screen w-full grid-cols-1 gap-5 p-2 lg:grid-cols-2 lg:p-16">
         <div className="h-full w-full ">
