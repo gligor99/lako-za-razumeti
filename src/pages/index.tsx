@@ -60,7 +60,7 @@ export default function Home() {
       </div>
 
       <button
-        className={`py-2 px-2 flex items-center justify-center uppercase font-semibold rounded-lg bg-yellow-300 text-black min-w-[250px] min-h-[50px] ${
+        className={`flex py-2 px-2 items-center justify-center uppercase font-semibold rounded-lg bg-yellow-300 text-black min-w-[250px] min-h-[50px] ${
           loading ? 'opacity-50 cursor-not-allowed' : ''
         }`}
         onClick={getSummarizedText}
