@@ -31,8 +31,6 @@ export default function Home() {
       presence_penalty: 0.0,
     })
 
-    console.log(prompt)
-
     setSummarizedText(completion.data.choices[0].text || '')
     setLoading(false)
   }
