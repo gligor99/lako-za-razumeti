@@ -18,7 +18,8 @@ export default function Home() {
 
     setLoading(true)
 
-    const prompt = `Sumirajte ovo, kako bi bilo lakse za razumeti: ${promptText}`
+    const trimmedText = promptText.replace(/\s/g, ' ')
+    const prompt = `Sumirajte ovo, kako bi bilo lakse za razumeti: ${trimmedText}`
 
     const completion = await openai.createCompletion({
       model: 'text-davinci-003',
@@ -29,6 +30,8 @@ export default function Home() {
       frequency_penalty: 0.0,
       presence_penalty: 0.0,
     })
+
+    console.log(prompt)
 
     setSummarizedText(completion.data.choices[0].text || '')
     setLoading(false)
